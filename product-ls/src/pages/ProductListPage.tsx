@@ -80,7 +80,7 @@ export default function ProductListPage() {
             onChange={(e) => setCategory(e.target.value as 'all' | 'electronics' | 'shoes')}
         >
             <option value="electronics">Electronics</option>
-            <option value="shoes">Jewelery</option>
+            <option value="shoes">Shoes</option>
             <option value="all">All</option>
         </select>
         </div>
