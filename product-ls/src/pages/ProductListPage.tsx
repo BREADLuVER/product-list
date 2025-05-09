@@ -33,7 +33,7 @@ const fetchProducts: QueryFunction<
 
 export default function ProductListPage() {
   const [search, setSearch] = useState('')
-  const [category, setCategory] = useState<'all' | 'electronics'>('all')
+  const [category, setCategory] = useState<'all' | 'electronics' | 'shoes'>('all')
   const loadMoreRef = useRef<HTMLDivElement | null>(null)
 
   const {
@@ -77,8 +77,10 @@ export default function ProductListPage() {
         />
         <select
             value={category}
-            onChange={(e) => setCategory(e.target.value as 'all')}
+            onChange={(e) => setCategory(e.target.value as 'all' | 'electronics' | 'shoes')}
         >
+            <option value="electronics">Electronics</option>
+            <option value="shoes">Jewelery</option>
             <option value="all">All</option>
         </select>
         </div>
