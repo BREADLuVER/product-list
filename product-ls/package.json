@@ -16,12 +16,14 @@
     "@tanstack/react-query-devtools": "^5.75.7",
     "@tanstack/react-query-persist-client": "^5.75.7",
     "localforage": "^1.10.0",
+    "lodash.debounce": "^4.0.8",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
+    "@types/lodash.debounce": "^4.0.9",
     "@types/react": "^19.1.2",
     "@types/react-dom": "^19.1.2",
     "@types/react-router-dom": "^5.3.3",
